@@ -1,7 +1,7 @@
 run:
 	make build
 	./trusty_reflection.out
-	 
+
 
 build: clever_williams.o kirch.o print_kirch.o trusty_reflection.o bhaskara.o
 	$(CC) -O0 -g -Wall -o trusty_reflection.out trusty_reflection.o bhaskara.o kirch.o print_kirch.o clever_williams.o
@@ -25,4 +25,3 @@ bhaskara.o: bhaskara.c
 clean:
 	rm *.o
 	rm *.out
-
