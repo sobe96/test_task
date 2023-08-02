@@ -23,4 +23,4 @@ bhaskara.o: bhaskara.c
 	$(CC) -std=c99 -O0 -g -Wall -c -o bhaskara.o bhaskara.c
 
 clean:
-	rm *.o
+	
