@@ -24,4 +24,3 @@ bhaskara.o: bhaskara.c
 
 clean:
 	rm *.o
-	rm *.out
