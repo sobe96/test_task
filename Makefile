@@ -5,7 +5,7 @@ run:
 
 build: clever_williams.o kirch.o print_kirch.o trusty_reflection.o bhaskara.o
 	$(CC) -std=c99 -O0 -g -Wall -o trusty_reflection.out trusty_reflection.o bhaskara.o kirch.o print_kirch.o clever_williams.o
-	
+	rm *.o
 
 clever_williams.o: clever_williams.c
 	$(CC) -std=c99 -O0 -g -Wall -c -o clever_williams.o clever_williams.c
@@ -23,3 +23,5 @@ bhaskara.o: bhaskara.c
 	$(CC) -std=c99 -O0 -g -Wall -c -o bhaskara.o bhaskara.c
 
 clean:
+	rm *.o
+	rm *.out
